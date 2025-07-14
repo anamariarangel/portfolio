@@ -1,20 +1,35 @@
 <?php
-// Função para carregar os estilos e scripts do tema pai e do child theme
-function meu_tema_child_enqueue_styles() {
-    // Carregar o CSS do tema pai (Hello Elementor ou outro)
-    wp_enqueue_style('tema-pai-style', get_template_directory_uri() . '/style.css');
 
-    // Carregar o CSS do child theme (style.css do child theme)
-    wp_enqueue_style('tema-filho-style', get_stylesheet_uri(), array('tema-pai-style'));
+function meu_tema_child_enqueue_styles() {
+    
+    wp_enqueue_style('tema-filho-style', get_stylesheet_uri());
+
+   
+    wp_enqueue_style(
+        'font-awesome',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css',
+        array(),
+        '6.5.0'
+    );
 }
 add_action('wp_enqueue_scripts', 'meu_tema_child_enqueue_styles');
 
-// Função para carregar os scripts do child theme
 function meu_tema_child_enqueue_scripts() {
-    // Carregar o script translate.js
-    wp_enqueue_script('tema-filho-translete', get_stylesheet_directory_uri() . '/js/translete.js', array('jquery'), null, true);
+    wp_enqueue_script(
+        'tema-filho-translate',
+        get_stylesheet_directory_uri() . '/js/translate.js',
+        array(), 
+        null,
+        true
+    );
 
-    // Carregar o script modal.js
-    wp_enqueue_script('tema-filho-modal', get_stylesheet_directory_uri() . '/js/modal.js', array('jquery'), null, true);
+    wp_enqueue_script(
+        'tema-filho-modal',
+        get_stylesheet_directory_uri() . '/js/modal.js',
+        array(), 
+        null,
+        true
+    );
 }
 add_action('wp_enqueue_scripts', 'meu_tema_child_enqueue_scripts');
+
