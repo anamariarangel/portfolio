@@ -1,0 +1,377 @@
+/*
+Theme Name:   Twenty Twenty Four Child
+Theme URI:    https://wordpress.org/themes/twentytwentyfour/
+Description:  Child theme for the Twenty Twenty Four theme
+Author:       Ana Maria Rangel
+Author URI:   https://portfolio.anamariarangel.com.br
+Template:     twentytwentyfour
+Version:      1.0.0
+*/
+
+
+@import url("../twenty-twenty-one/style.css"); /* Isso carrega o CSS do tema principal */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #011c3a !important;
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  line-height: 1.6;
+}
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  font-family: 'Raleway', sans-serif;
+  z-index: 10;
+}
+
+.navbar {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-item {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-item:hover {
+  opacity: 0.7;
+}
+
+.separator {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* HERO / HOME SECTION */
+.hero {
+  background-image: url('https://portfolio.anamariarangel.com.br/wp-content/uploads/2025/07/Background67.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Aplica branco ao texto da home */
+}
+
+.hero .container,
+.hero .profile-name,
+.hero .profile-role,
+.hero .project-btn {
+  color: white;
+}
+
+.hero .project-btn:hover {
+  color: #00ffff;
+}
+
+/* CONTAINER GERAL */
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1140px;
+  padding: 40px 20px;
+}
+
+/* ESQUERDA */
+.profile-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.profile-name {
+  font-size: 28px;
+  font-weight: 800;
+ 
+}
+
+.profile-role {
+  font-size: 20px;
+  font-weight: 600;
+ 
+}
+
+/* CONTATOS */
+.profile-contacts {
+  padding-top: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.profile-contacts .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-contacts .icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-contacts .icon i {
+  font-size: 20px;
+  color: white;
+}
+
+/* Cores dos ícones */
+.github { background-color: #333; }
+.linkedin { background-color: #0077B5; }
+.whatsapp { background-color: #25D366; }
+.email { background-color: #EA4335; }
+
+/* DIREITA */
+.projects-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-btn {
+  background: none;
+  border: none;
+  padding: 8px 0;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.2s, transform 0.2s;
+  width: 100%;
+  color: #022f62; /* padrão fora da home */
+}
+
+.project-btn i {
+  color: #00bcd4;
+  font-size: 20px;
+}
+
+.project-btn:hover {
+  color: #00bcd4;
+  transform: translateX(4px);
+}
+
+/* MODAL */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px 20px;
+}
+
+.modal-overlay.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  color: #000;
+  margin: auto;
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 800px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-content h3 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #022f62;
+  margin-bottom: 10px;
+}
+
+.modal-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #022f62;
+  margin-top: 20px;
+}
+
+.modal-content ul {
+  margin: 10px 0 20px;
+  padding-left: 20px;
+}
+
+.modal-content a {
+  color: #022f62;
+  text-decoration: underline;
+}
+
+.modal-gallery {
+  display: flex;
+  gap: 16px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.modal-gallery img,
+#modal-tjmsp img {
+  width: 100%;
+  max-width: 48%;
+  border-radius: 6px;
+  
+  object-fit: cover;
+}
+
+.modal-content p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+/* CLOSE BUTTON */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: #022f62;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #00bcd4;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero {
+    background-image: none !important;
+    background-color: #011c3a !important;
+    padding-top: 400px !important; /* espaço para header */
+    padding-bottom: 240px !important;
+    min-height: 100vh !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .container {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+    padding: 0 20px !important;
+  }
+
+  .profile-section,
+  .projects-section {
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #011c3a !important;
+   
+  }
+
+  .profile-photo {
+    width: 180px !important;
+    height: 180px !important;
+    margin-top: 20px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+  }
+
+  .profile-name {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    color: white !important;
+  }
+
+  .profile-role {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: white !important;
+    margin-bottom: 20px !important;
+  }
+
+  .projects-list {
+  gap: 0px;
+  padding-bottom: 60px;
+}
+
+  .project-btn {
+    font-size: 16px !important;
+    color: white !important;
+    text-align: center !important;
+    align-self: center !important;
+  }
+}
+
+#header{
+    display: none;
+}
