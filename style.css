@@ -1,19 +1,70 @@
 /*
-Theme Name:   Twenty Twenty Four Child
-Theme URI:    https://wordpress.org/themes/twentytwentyfour/
-Description:  Child theme for the Twenty Twenty Four theme
-Author:       Ana Maria Rangel
-Author URI:   https://portfolio.anamariarangel.com.br
-Template:     twentytwentyfour
-Version:      1.0.0
+Theme Name: Portfolio Theme
+Theme URI: https://portfolio.anamariarangel.com.br
+Description: Tema desenvolvido de forma independente por Ana Maria Rangel
+Author: Ana Maria Rangel
+Author URI: https://portfolio.anamariarangel.com.br
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:portfolio-theme
 */
 
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('../webfonts/fa-brands-400.woff2') format('woff2'),
+       url('../webfonts/fa-brands-400.woff') format('woff');
+}
 
-@import url("../twenty-twenty-one/style.css"); /* Isso carrega o CSS do tema principal */
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url('../webfonts/fa-solid-900.woff2') format('woff2'),
+       url('../webfonts/fa-solid-900.woff') format('woff');
+}
 
+/* Só os ícones que você usa */
+.fab {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400;
+}
 
+.fas {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+/* Adicione apenas os unicodes que você precisa */
+.fa-github:before {
+  content: "\f09b";
+}
+.fa-linkedin-in:before {
+  content: "\f0e1";
+}
+.fa-whatsapp:before {
+  content: "\f232";
+}
+.fa-envelope:before {
+  content: "\f0e0";
+}
+.fa-code:before {
+  content: "\f121";
+}
+.fa-paint-brush:before {
+  content: "\f1fc";
+}
+.fa-sync-alt:before {
+  content: "\f2f1";
+}
+.fa-flask:before {
+  content: "\f0c3";
+}
+
 
 /* Reset */
 * {
@@ -75,7 +126,6 @@ html, body {
 
 /* HERO / HOME SECTION */
 .hero {
-  background-image: url('https://portfolio.anamariarangel.com.br/wp-content/uploads/2025/07/Background67.jpg');
   background-size: cover;
   background-position: center center;
   height: 100vh;
