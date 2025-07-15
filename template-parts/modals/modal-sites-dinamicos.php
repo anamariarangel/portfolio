@@ -10,17 +10,19 @@
 
     <h3 data-pt="Sites Dinâmicos" data-en="Dynamic Sites">Dynamic Sites</h3>
 
-    <p data-pt="Sites dinâmicos criados para permitir o cadastramento de conteúdo no backend com uso de custom post types e taxonomias personalizadas, além de oferecer filtros avançados e exibição de resultados no frontend. Esses projetos possibilitam gerenciamento completo dos dados e uma experiência interativa para os usuários."
-       data-en="Dynamic sites created to allow content registration in the backend using custom post types and custom taxonomies, while also offering advanced filters and frontend results display. These projects enable complete data management and an interactive experience for users.">
-      Dynamic sites created to allow content registration in the backend using custom post types and custom taxonomies, while also offering advanced filters and frontend results display. These projects enable complete data management and an interactive experience for users.
-    </p>
+    <p 
+  data-pt="Sites dinâmicos e institucionais com design personalizado, criados em Elementor e com backend estruturado via custom post types e taxonomias personalizadas. Integram filtros avançados no frontend, foco em usabilidade, performance, SEO e carregamento rápido. Projetos pensados para facilitar o gerenciamento de conteúdo e fortalecer a presença digital." 
+  data-en="Dynamic and institutional websites with custom design, built with Elementor and a backend structured using custom post types and taxonomies. They include advanced frontend filters, focus on usability, performance, SEO, and fast loading. Projects designed to simplify content management and strengthen digital presence.">
+  Dynamic and institutional websites with custom design, built with Elementor and a backend structured using custom post types and taxonomies. They include advanced frontend filters, focus on usability, performance, SEO, and fast loading. Projects designed to simplify content management and strengthen digital presence.
+  </p>
+
 
     <div class="modal-gallery">
 
       <div class="project">
         <h4 data-pt="Todxs Consultoria" data-en="Todxs Consultancy">Todxs Consultancy</h4>
         <a href="https://todxsconsultoria.com.br/" target="_blank" rel="noopener noreferrer">
-          <img src="https://portfolio.anamariarangel.com.br/wp-content/uploads/2025/03/1.png" alt="Todxs Consultoria"
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/todxs.png" alt="Todxs Consultoria"
                data-pt="Todxs Consultoria" data-en="Todxs Consultancy">
         </a>
         <p>
@@ -32,7 +34,7 @@
       <div class="project">
         <h4 data-pt="Duo House Imóveis" data-en="Duo House Real Estate">Duo House Real Estate</h4>
         <a href="https://duohouseimoveis.com.br/" target="_blank" rel="noopener noreferrer">
-          <img src="https://portfolio.anamariarangel.com.br/wp-content/uploads/2024/10/Copy-of-Copy-of-Copy-of-Site-para-imobiliaria-e-corretores-de-imoveis-Instagram-Post-Square-1080-%C3%97-600-px-1.png"
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/duohouse.png"
                alt="Duo House Imóveis" data-pt="Duo House Imóveis" data-en="Duo House Real Estate">
         </a>
         <p>
@@ -44,7 +46,7 @@
       <div class="project">
         <h4 data-pt="Imobup Empreendimentos" data-en="Imobup Ventures">Imobup Ventures</h4>
         <a href="https://imobupempreendimentos.com.br/" target="_blank" rel="noopener noreferrer">
-          <img src="https://portfolio.anamariarangel.com.br/wp-content/uploads/2024/10/6.png"
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/imobup.png"
                alt="Imobup Empreendimentos" data-pt="Imobup Empreendimentos" data-en="Imobup Ventures">
         </a>
         <p>
@@ -56,11 +58,23 @@
       <div class="project">
         <h4 data-pt="Pergunta Uai" data-en="Pergunta Uai">Pergunta Uai</h4>
         <a href="https://perguntauai.com.br/" target="_blank" rel="noopener noreferrer">
-          <img src="https://portfolio.anamariarangel.com.br/wp-content/uploads/2025/03/2.png" alt="Pergunta Uai"
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/perguntauai.png" alt="Pergunta Uai"
                data-pt="Pergunta Uai" data-en="Pergunta Uai">
         </a>
         <p>
           🔗 <a href="https://perguntauai.com.br/" target="_blank" rel="noopener noreferrer"
+                data-pt="Visitar site" data-en="Visit website">Visit website</a>
+        </p>
+      </div>
+
+       <div class="project">
+        <h4 data-pt="Paper One Papéis" data-en="Paper One Papers">Paper One Papers</h4>
+        <a href="https://paperonepapeis.com.br/" target="_blank" rel="noopener noreferrer">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/paper_factory.png"
+               alt="Paper One Papéis" data-pt="Paper One Papéis" data-en="Paper One Papers">
+        </a>
+        <p>
+          🔗 <a href="https://paperonepapeis.com.br/" target="_blank" rel="noopener noreferrer"
                 data-pt="Visitar site" data-en="Visit website">Visit website</a>
         </p>
       </div>

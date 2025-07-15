@@ -9,7 +9,7 @@
     <span class="close" onclick="closeModal('tjmsp')" data-pt="Fechar" data-en="Close">&times;</span>
     <h3 data-pt="Projeto Extranet TJMSP" data-en="TJMSP Extranet Project">TJMSP Extranet Project</h3>
 
-    <img src="https://portfolio.anamariarangel.com.br/wp-content/uploads/2024/12/Copy-of-Copy-of-Copy-of-Site-para-imobiliaria-e-corretores-de-imoveis-Instagram-Post-Square-1080-%C3%97-600-px.jpg"
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tjmsp.jpg"
       alt="TJMSP Extranet Project" class="project-image" />
 
     <p data-pt="Trata-se da renovação do portal do Tribunal de Justiça Militar do Estado de São Paulo (TJMSP). Fui contratada pela empresa Modelar Tecnologia para liderar esse projeto."
@@ -52,8 +52,8 @@
     </p>
 
     <div>
-      <img src="https://portfolio.anamariarangel.com.br/wp-content/uploads/2025/07/calendar.jpg" alt="calendar">
-      <img src="https://portfolio.anamariarangel.com.br/wp-content/uploads/2025/07/popupcalendar.jpg" alt="popupcalendar">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/audiencia_calendar.jpg" alt="calendar">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/popup.jpg" alt="popupcalendar">
     </div>
 
     <p>

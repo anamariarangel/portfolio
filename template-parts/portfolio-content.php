@@ -11,7 +11,7 @@
       <!-- LEFT COLUMN -->
       <div class="profile-section">
         <img
-          src="https://portfolio.anamariarangel.com.br/wp-content/uploads/elementor/thumbs/1740060286779-r3drdysw4bxz6x9upg8f9eg287ocmj7hq18zxvxntc.webp"
+          src="<?php echo get_stylesheet_directory_uri(); ?>/assets/ana.webp"
           alt="Ana Maria Rangel" class="profile-photo" fetchpriority="high" />
 
         <h1 class="profile-name">Ana Maria Mendes Rangel</h1>
@@ -57,12 +57,6 @@
               <i class="fas fa-sync-alt"></i>
 
               <span data-pt="Sites Dinâmicos" data-en="Dynamic Sites">Dynamic Sites</span>
-            </button>
-          </li>
-          <li>
-            <button class="project-btn" onclick="openModal('sites-institucionais')">
-              <i class="fas fa-layer-group"></i>
-              <span data-pt="Sites Institucionais" data-en="Institutional Sites">Institutional Sites</span>
             </button>
           </li>
           <li>
